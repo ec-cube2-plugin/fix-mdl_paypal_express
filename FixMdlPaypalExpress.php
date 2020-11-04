@@ -8,6 +8,11 @@ define('DROPPED_ITEMS_NOTICER_HEADER', TEMPLATE_REALDIR . 'dropped_item_noticer/
 define('DROPPED_ITEMS_NOTICER_CONTENTS', TEMPLATE_REALDIR . 'dropped_item_noticer/mail/contents.tpl');
 define('DROPPED_ITEMS_NOTICER_FOOTER', TEMPLATE_REALDIR . 'dropped_item_noticer/mail/footer.tpl');
 
+if (defined('LOG_REALDIR')) {
+    define("PAYPAL_EXPRESS_LOG_PATH", LOG_REALDIR. "paypal.log");
+    define('DROPPED_ITEMS_NOTICER_LOG', LOG_REALDIR . 'dropped_item_noticer.log');
+}
+
 /**
  * プラグインのメインクラス
  */
