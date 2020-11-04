@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    FixMdlPaypalExpress\Command\:
+        resource: '../src/FixMdlPaypalExpress/Command/*'
+        tags:
+            - { name: 'console.command' }
